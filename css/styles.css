@@ -227,6 +227,7 @@ img {
 
 .team-container {
   background: var(--CLOUD, #f4f4fd);
+  padding: 120px 0;
 }
 
 .team-title {
@@ -285,6 +286,7 @@ img {
 
 .portfolio-container {
   background: #fff;
+  padding: 120px 0;
 }
 
 .portfolio-title {
