@@ -41,13 +41,16 @@ img {
   padding-bottom: 120px;
 }
 
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
+}
 .header-container {
   display: flex;
   color: rgba(255, 255, 255, 1);
   flex-shrink: 0;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #e7e9fc;
+  padding: 0 15px;
 }
 
 .header-nav {
@@ -88,7 +91,6 @@ img {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding: 24px 0;
 }
 
 .menu-list-link:hover,
@@ -99,6 +101,7 @@ img {
 .menu-list-link {
   text-decoration: none;
   color: #2e2f42;
+  padding: 24px 0;
 }
 
 .address {
@@ -131,9 +134,12 @@ img {
 }
 
 .baner {
-  background: var(--NAVY-BLUE, #2e2f42);
   width: 100%;
   height: 600px;
+}
+
+.baner-container {
+  background: var(--NAVY-BLUE, #2e2f42);
   margin: 0 auto;
   text-align: center;
   display: flex;
