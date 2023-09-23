@@ -47,33 +47,39 @@ img {
   flex-shrink: 0;
   padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
+  border-bottom: 1px solid #e7e9fc;
+  padding: 0 15px;
 }
 
 .header-nav {
-  flex-grow: 1;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
+  flex-grow: 1;
 }
 
 .logo {
   text-decoration: none;
-  color: var(--IRIS, #4d5ae5);
+  color: #4d5ae5;
   font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.17; /* 116.667% */
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .logo-detail {
-  color: var(--NAVY-BLUE, #2e2f42);
+  color: #2e2f42;
 }
 
 .menu {
   gap: 40px;
-  display: inline-flex;
+  display: flex;
   align-items: flex-start;
+  padding: 24px 0;
+  flex-grow: 1;
 }
 
 .menu-list-item {
@@ -103,6 +109,7 @@ img {
   font-weight: 400;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 
 .address-list {
@@ -133,6 +140,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 188px 0;
 }
 
 .baner-title {
@@ -143,7 +151,7 @@ img {
   line-height: 1.07; /* 107.143% */
   letter-spacing: 0.02em;
   padding-bottom: 48px;
-  padding-top: 188px;
+  max-width: 496px;
 }
 
 .baner-button {
@@ -158,6 +166,9 @@ img {
   display: block;
   padding: 16px 32px;
   border-radius: 4px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 
 .baner-button:hover,
@@ -167,11 +178,25 @@ img {
 
 .about-container {
   background: #fff;
+  /* padding: 120px 0; */
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .about-element {
   display: flex;
-  width: calc((100%-24 * 3) / 4);
+  width: calc((100%-3 * 24) / 4);
   gap: 24px;
 }
 
@@ -181,7 +206,7 @@ img {
   font-weight: 500;
   line-height: 1.2; /* 120% */
   letter-spacing: 0.02em;
-  padding-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .about-text {
@@ -203,7 +228,7 @@ img {
   line-height: 1.11; /* 111.111% */
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-bottom: 74px;
+  margin-bottom: 72px;
 }
 
 .team-list {
@@ -219,6 +244,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-img {
@@ -231,7 +257,12 @@ img {
   font-weight: 500;
   line-height: 1.2; /* 120% */
   letter-spacing: 0.02em;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.member-info {
+  padding: 32px 0;
 }
 
 .position {
@@ -240,6 +271,7 @@ img {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
   padding-bottom: 32px;
+  text-align: center;
 }
 
 .portfolio-container {
@@ -254,6 +286,7 @@ img {
   line-height: 1.11; /* 111.111% */
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .portfolio-card-list {
@@ -264,14 +297,13 @@ img {
 
 .portfolio-card {
   background: var(--WHITE, #fff);
-  width: calc((100%-24 * 2) / 3);
+  width: calc((100% - 48px) / 3);
   border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
 }
 
 .portfolio-info {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  gap: 4px;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
 }
 
 .portfolio-card-title {
@@ -280,6 +312,7 @@ img {
   line-height: 1.2; /* 120% */
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .portfolio-card-text {
@@ -307,6 +340,8 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-detail {
