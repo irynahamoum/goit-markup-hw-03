@@ -338,6 +338,13 @@ img {
   padding-bottom: 100px;
 }
 
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
 .footer-logo {
   color: #4d5ae5;
   font-family: Raleway, sans-serif;
@@ -348,7 +355,6 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
-  margin-bottom: 16px;
 }
 
 .footer-logo-detail {
@@ -356,7 +362,6 @@ img {
 }
 
 .footer-text {
-  padding-top: 18px;
   color: #f4f4fd;
   font-size: 16px;
   line-height: 1.5; /* 150% */
